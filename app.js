@@ -1,4 +1,5 @@
 
+// TODO: Generate User 
 const generateUser = {
     data() {
         return {
@@ -16,7 +17,7 @@ const generateUser = {
               const res = await fetch('https://randomuser.me/api');
               const { results } = await res.json();
               this.firstName = results[0].name.first
-              this.lastName = results[0].name.lastName
+              this.lastName = results[0].name.last
               this.email = results[0].email
               this.gender = results[0].gender
               this.phone = results[0].phone
@@ -25,3 +26,6 @@ const generateUser = {
       }
 }
 Vue.createApp(generateUser).mount('#app')
+
+// TODO: call feather icons 
+feather.replace()

@@ -1,6 +1,6 @@
 
 // TODO: Generate User 
-const generateUser = {
+const app = {
     data() {
         return {
             firstName: 'Juan',
@@ -25,4 +25,4 @@ const generateUser = {
           },
       }
 }
-Vue.createApp(generateUser).mount('#app')
+Vue.createApp(app).mount('#app')

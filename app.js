@@ -4,8 +4,9 @@ const generateUser = {
         return {
             firstName: 'Juan',
             lastName: 'Dela Cruz',
-            email: 'jean@email.com',
+            email: 'juan@email.com',
             gender: 'male',
+            phone: '011-962-7516',
             photo: 'https://randomuser.me/api/portraits/men/10.jpg',
         }
     }, 
@@ -18,6 +19,7 @@ const generateUser = {
               this.lastName = results[0].name.lastName
               this.email = results[0].email
               this.gender = results[0].gender
+              this.phone = results[0].phone
               this.photo = results[0].picture.thumbnail
           },
       }

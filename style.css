@@ -6,7 +6,8 @@
 
 html,
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #app {
@@ -32,12 +33,20 @@ body {
     margin-top: 50px;
 }
 
-.bg-male {
+.male {
     background-color: #3498db;
     color: #fff;
 }
 
-.bg-female {
+.male:hover {
+    color: #fff;
+}
+
+.female:hover {
+    color: #fff;
+}
+
+.female {
     background-color: #fd79a8;
     color: #fff;
 }
@@ -47,4 +56,30 @@ body {
     background-color: #fff;
     margin-top: -40px;
     padding-top: 50px;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    background: #333;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    transform: scale(0.98);
+}
+
+.media-content p {
+    margin-bottom: 0;
+    color: #000;
 }

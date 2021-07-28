@@ -14,12 +14,11 @@ const generateUser = {
               // TODO: Fetch API 
               const res = await fetch('https://randomuser.me/api');
               const { results } = await res.json();
-  
               this.firstName = results[0].name.first
               this.lastName = results[0].name.lastName
               this.email = results[0].email
               this.gender = results[0].gender
-              this.photo = results[0].picture.large
+              this.photo = results[0].picture.thumbnail
           },
       }
 }

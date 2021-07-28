@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <img v-bind:class="gender" v-bind:src="photo" v-bind:alt="`${firstName} ${lastName}`">
-        <h1>{{firstName lastName}}</h1>
+        <h1>{{firstName}} {{lastName}}</h1>
         <h3>{{email}}</h3>
         <button v-on:click="getUser()" v-bind:class="gender" type="button">Generate Random User</button>
     </div>

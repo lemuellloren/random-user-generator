@@ -26,6 +26,3 @@ const generateUser = {
       }
 }
 Vue.createApp(generateUser).mount('#app')
-
-// TODO: call feather icons 
-feather.replace()
